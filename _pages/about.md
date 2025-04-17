@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+heading: Hey, I'm Abel 👋
 permalink: /about/
 ---
 
