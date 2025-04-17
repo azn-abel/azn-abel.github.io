@@ -290,6 +290,7 @@ p > img {
   padding: 20px 0;
   border-bottom: 1px solid $lightGray;
   display: flex;
+  justify-content: space-between;
 
   @include mobile {
     flex-direction: column;
