@@ -295,6 +295,11 @@ p > img {
   }
 }
 
+.profile-card {
+  display: flex;
+  flex-direction: row;
+}
+
 .site-avatar {
   float: left;
   width: 70px;
