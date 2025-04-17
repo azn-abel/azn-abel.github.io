@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I'm Abel Lu, a Computer Science undergraduate at North Carolina State University with a passion for full-stack development, cloud infrastructure, and site reliability engineering.
+I'm a Computer Science undergraduate at North Carolina State University with a passion for full-stack development, cloud infrastructure, and site reliability engineering.
 
 ## Experience
 
