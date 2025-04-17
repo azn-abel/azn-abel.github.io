@@ -291,13 +291,15 @@ p > img {
   border-bottom: 1px solid $lightGray;
 
   @include mobile {
-    text-align: center;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
 .profile-card {
   display: flex;
   flex-direction: row;
+  width: fit-content;
 }
 
 .site-avatar {
@@ -309,7 +311,6 @@ p > img {
   @include mobile {
     float: none;
     display: block;
-    margin: 0 auto;
   }
 
   img {
@@ -326,7 +327,6 @@ p > img {
   @include mobile {
     float: none;
     display: block;
-    margin: 0 auto;
   }
 }
 
@@ -341,7 +341,6 @@ p > img {
   text-align: left;
 
   @include mobile {
-    text-align: center;
   }
 }
 
