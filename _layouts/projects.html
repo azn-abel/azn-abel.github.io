@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<div class="posts">
+  {% for project in site.projects %}
+    <article class="post">
+      <a href="{{ project.url }}">
+        <h1>{{ project.title }}</h1>
+      </a>
+    </article>
+  {% endfor %}
+</div>
