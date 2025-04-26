@@ -44,7 +44,7 @@ What you choose to use depends on your motivation.
 - **Want to be hip and cool?**
   - *Use [Vue](https://vuejs.org/) or [Svelte](https://svelte.dev/docs/kit/introduction)*
  
-The list could go on forever. Heck, you could even just use HTML, CSS, and JavaScript. However, your commitment to whatever
+The list could go on forever. Heck, you could even just use HTML, CSS, and JavaScript. Your commitment to whatever
 you pick matters way more than the framework itself. Choose something that feels right, stick with it, and build your website.
 If you ever want to rebuild with different tools later, they will still be there.
 
