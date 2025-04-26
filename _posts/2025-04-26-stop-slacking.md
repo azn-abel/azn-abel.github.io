@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Stop Slacking and Build Your Personal Website
-categories: [Web Development]
+categories: [Web Development, Computer Science]
 ---
 You’ve probably thought about building a personal website at least once. Maybe you've even started one, only to let it rot in a dusty GitHub repo.
 
