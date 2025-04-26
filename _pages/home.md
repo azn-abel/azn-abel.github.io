@@ -7,6 +7,8 @@ permalink: /
 
 I'm a Computer Science undergraduate at North Carolina State University with a passion for full-stack development, cloud infrastructure, and site reliability engineering.
 
+Thanks for stopping by. While you're here, feel free to check out my [blog](/blog) and my [projects](/projects).
+
 ## Experience
 
 - Software Engineering Intern @ [LinkedIn](https://about.linkedin.com/) - Summer 2025
