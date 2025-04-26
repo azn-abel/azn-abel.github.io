@@ -88,6 +88,10 @@ plugins:
 
 include: ["_pages", "_projects"]
 
+collections:
+  projects:
+    output: true
+
 paginate: 6
 paginate_path: /page:num/
 
