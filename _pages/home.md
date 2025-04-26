@@ -1,8 +1,8 @@
 ---
 layout: page
-title: About
+title: Home
 heading: Hey, I'm Abel 👋
-permalink: /about/
+permalink: /
 ---
 
 I'm a Computer Science undergraduate at North Carolina State University with a passion for full-stack development, cloud infrastructure, and site reliability engineering.
