@@ -1,6 +1,5 @@
 ---
-layout: post
-title: Under Construction
+title: Job Applications Tracker
 categories: [React,JavaScript,TypeScript,Job Search]
 ---
-This site is under construction 🏗️. Check back soon!
+A minimal, no-BS job applications tracker.
