@@ -7,7 +7,7 @@ You’ve probably thought about building a personal website at least once. Maybe
 
 It’s time to stop slacking.
 
-If you're new to web development, it might feel like a daunting task. If you're a perfectionist, your decision paralysis can leave
+If you're new to web development, building and deploying a website might feel like a daunting task. If you're a perfectionist, your decision paralysis can leave
 you stuck procrastinating. But here's the thing: your website doesn’t need to win design awards. It just needs to convince people you’re
 serious about this whole Computer Science thing.
 
@@ -53,7 +53,7 @@ If you ever want to rebuild with different tools later, they will still be there
 So you have your website built and running on `http://localhost:5173` (or some other port). Congratulations!
 You've already come a long way, so give yourself a pat on the back. Now you want your site to be accessible by anyone on the internet.
 
-My go-to is [Cloudflare Pages](https://pages.cloudflare.com/). All you need to do to get started with them is create an
+My go-to for deploying static websites is [Cloudflare Pages](https://pages.cloudflare.com/). All you need to do to get started with them is create an
 account and link your GitHub. From there, you create a Pages deployment, fill out their very short configuration options,
 and (about 10 minutes later) boom! Your site is live 🥳!
 
