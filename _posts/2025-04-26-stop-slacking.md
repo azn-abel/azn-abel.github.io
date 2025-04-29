@@ -59,10 +59,13 @@ and (about 10 minutes later) boom! Your site is live 🥳!
 
 Another option I've used in the past is [GitHub Pages](https://pages.github.com/). However, it's
 [quite finicky](https://www.linkedin.com/pulse/solve-404-when-using-browserrouter-github-pages-anu-shibin-joseph-raj-sx5tf/) to use
-with React Router, which I ran into when building my first website.
+with React Router, which is something I learned when building my first website.
 
 If you want to use a custom domain, you will need to rent or purchase one from a registrar like
-[NameCheap](https://www.namecheap.com/) or [porkbun](https://porkbun.com/). This is its own can of worms, so I won't expand on it here.
+[NameCheap](https://www.namecheap.com/) or [porkbun](https://porkbun.com/). If you're already using Cloudflare Pages,
+you can register you domain with [Cloudflare Registrar](https://www.cloudflare.com/products/registrar/) and set up the appropriate DNS records
+in just a few clicks. Setting up a custom domain can be its own can of worms, so I won't expand more on it here. However, there are plenty of
+guides online already to help you figure it out.
 
 ## Wrapping it up
 
