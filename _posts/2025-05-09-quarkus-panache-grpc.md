@@ -4,8 +4,8 @@ title: Quarkus, Panache, and gRPC
 categories: [Java, Quarkus, gRPC]
 ---
 
-Quarkus, Panache, and gRPC are three technologies I'm playing with right now. Here's what I like
-and dislike about each of them.
+Quarkus, Panache, and gRPC are three technologies I'm playing with right now. Here's what I've learned
+about each of them so far.
 
 ## Quarkus
 
