@@ -325,7 +325,6 @@ p > img {
   // font-family: $helveticaNeue;
   font-weight: 300;
   font-size: 28px;
-  letter-spacing: 1px;
   text-align: left;
 
   @include mobile {
@@ -359,7 +358,6 @@ nav {
     color: $darkGray;
     text-align: right;
     // font-weight: 300;
-    // letter-spacing: 1px;
 
     @include mobile {
       margin: 0 10px;
@@ -492,7 +490,6 @@ body:after {
 .author_title {
   // text-align: center;
   color: #939aa1;
-  letter-spacing: 2px;
 }
 
 .post_date {
@@ -722,7 +719,6 @@ Modules - reusable parts of our design
     )
     hsla(203, 11%, 95%, 0.4);
   text-transform: uppercase;
-  letter-spacing: 0.5px;
   font-weight: 600;
   font-size: 9px;
   line-height: 0;
