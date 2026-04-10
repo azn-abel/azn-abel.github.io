@@ -1,0 +1,54 @@
+body {
+  max-width: 42rem;
+  margin: auto;
+  padding: 1rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+main {
+  flex: 1;
+}
+
+a {
+  color: black;
+}
+
+header {
+  * {
+    text-align: center;
+  }
+  nav {
+    ul {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      list-style-type: none;
+      padding: 0;
+    }
+    border: 1px solid black;
+  }
+}
+
+footer {
+  text-align: center;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  border-top: 1px solid black;
+}
+
+.site-title {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0.67em 0;
+  text-decoration: none;
+  display: block;
+}
+
+.section-label {
+  font-size: 1.17em;
+  font-weight: bold;
+  margin: 0.83em 0;
+}
