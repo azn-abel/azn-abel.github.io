@@ -8,8 +8,11 @@ const releases = [
 ];
 
 function coverPath(title) {
-  const filename = title.toLowerCase().replace(/\s+/g, "-").replace(/[^a-z0-9-]/g, "");
-  return `./covers/${filename}.png`;
+  const filename = title
+    .toLowerCase()
+    .replace(/\s+/g, "-")
+    .replace(/[^a-z0-9-]/g, "");
+  return `./covers/${filename}.webp`;
 }
 
 const container = document.querySelector(".releases");
