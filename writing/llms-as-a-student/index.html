@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abel Lu | Writing</title>
+    <link rel="stylesheet" href="/global.css" />
+  </head>
+  <body>
+    <header>
+      <a href="/" class="site-title">Abel Lu</a>
+      <p class="section-label">Writing</p>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/projects/">Projects</a></li>
+          <li><a href="/writing/">Writing</a></li>
+          <li><a href="/music/">Music I Like</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>3 Ways I Use LLMs As a CS Student</h1>
+      <p>
+        I'm graduating from college soon and unless I go back for my master's at
+        some point, this may very well be the last post I write as a student. In
+        this post, I want to share three ways I've been using Claude Code
+        <i>as a student</i>. It's in contrast to how I've been using it as a
+        professional software engineer, which I'll probably write about in a
+        future post.
+      </p>
+      <h2>1. Learning New Technologies</h2>
+      <p>
+        As a student, you end up learning a lot of new technologies, including
+        programming languages, frameworks, and dev tools. However, classes
+        rarely go that deep into teaching you how things work at a deeper level.
+        Think about it: for any given class, you're in lectures for maybe 3
+        hours a week, and if you're anything like me, you're probably not
+        retaining most of the information anyway. You're basically learning just
+        enough to get by and then forgetting it right after the semester ends.
+        This is especially true for classes that use a lot of different tools,
+        like web development classes where you might be using React, Spring
+        Boot, Docker, and a bunch of other stuff all in one semester.
+      </p>
+      <p>
+        Before LLMs, if I wanted to learn more about a technology, I would have
+        to sift through documentation, Medium articles, and YouTube tutorials
+        just to get my footing. While I still think documentation is the best
+        way to learn (especially "Getting Started" guides), LLMs have made it so
+        much easier to get answers to specific questions and to understand
+        things more deeply.
+      </p>
+      <p>
+        For example, when I was first learning React, I didn't understand why
+        calling <code>setState(state + 1)</code> twice in the same method would
+        only increment the state by 1. I eventually came across this
+        <a href="https://stackoverflow.com/a/33613918">StackOverflow answer</a>,
+        but I didn't understand half the words in it. If I had an LLM at the
+        time, I could've just asked it to explain the answer in terms I'd
+        understand, and then follow up with more questions until I fully
+        understood what was going on behind the scenes.
+      </p>
+      <p>
+        LLMs are such a good tool for learning how things work, and I think it's
+        a shame that most students don't use them for this and just use them to
+        generate code without understanding any of it. In my opinion, LLMs have
+        made it so easy to learn a new stack that there's no longer any excuse
+        to not understand the tools you use at (at least) a surface level. Stop
+        copying and pasting code and calling it a day, use LLMs to help you
+        understand it.
+      </p>
+
+      <h2>2. Building Simple Tools</h2>
+      <p>
+        With the rise of actually-good coding agents, the gap between "I wish I
+        had a tool that could do X" and "I have a tool that can do X" has shrunk
+        dramatically. For one of my classes, we are required to design a poster
+        and present it at the end of the semester. One of the poster
+        requirements was to include a section on testing, which I wanted to
+        display in a radial chart format. After perusing for a while, all the
+        tools I found for making radial charts were either pay-to-use or broken
+        (as in the site would crash when I tried to change inputs). A few years
+        ago, not having a tool like this would've been a huge blocker for me,
+        but with Claude Code, I was able to generate a working
+        <a href="https://azn-abel.github.io/tools/radial-chart-maker/"
+          >radial chart generator</a
+        >
+        in about 15 minutes of prompting.
+      </p>
+      <p>
+        Could I have built this myself? Probably, but definitely not in 15
+        minutes. For simple apps like this where the requirements are
+        straightforward and the stakes are low, building with an agent as
+        effectively closed the gap between an idea and a working prototype. Next
+        time you need a quick tool and don't have it, give Claude a go.
+      </p>
+      <p>
+        You can check out more of these tools
+        <a href="https://azn-abel.github.io/tools/">here</a>.
+      </p>
+
+      <h2>3. Doing the Stuff I Already Know How To Do</h2>
+      <p>
+        I might catch some heat from teaching staff for this, but I think it's
+        worth saying: if I have an assignment that I already know how to do, I'm
+        probably going to use an LLM to do it. For example, a lot of web
+        development classes have tedious work where you're just copying and
+        pasting CRUD. Over and over. At this point in college, I could do that
+        shit in my sleep. And with how good LLMs are getting, it's a part of the
+        process that requires little to no human involvement anyway. I'll still
+        review the code of course, especially if other people will be working on
+        the same codebase later.
+      </p>
+      <p>
+        There are just better things to spend your time on. For example,
+        <i>designing</i> the backbone of the CRUD operations (REST API
+        endpoints, database schemas, etc.) is a much more enriching exercise.
+        However, I must admit this is a slippery slope. Once you become okay
+        using LLMs to generate <i>some</i> code for you, it becomes easy to let
+        it generate more and more until it reaches a point beyond your
+        understanding.
+      </p>
+      <p>
+        My advice here is to learn what your limits are and to keep pushing
+        them. If your LLM-generated code is reaching a point that exceeds what
+        you can read and understand, it might be time to go back to step 1 and
+        learn a bit more. Become so knowledgable in an area that everything an
+        LLM spits out is easy for you to understand and modify. Then you can use
+        LLMs to do the heavy lifting while you focus on the high-level design
+        and understanding of the code.
+      </p>
+    </main>
+    <footer>Abel Lu</footer>
+  </body>
+</html>
