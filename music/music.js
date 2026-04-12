@@ -1,4 +1,6 @@
 const releases = [
+  { title: "U", artist: "underscores" },
+  { title: "Odyssey", artist: "Illenium" },
   { title: "Ten Days", artist: "Fred again.." },
   { title: "Nurture", artist: "Porter Robinson" },
   { title: "Conversations with the Moon", artist: "grentperez" },
