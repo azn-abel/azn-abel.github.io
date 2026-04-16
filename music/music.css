@@ -14,3 +14,9 @@
     }
   }
 }
+
+@media (max-width: 480px) {
+  .releases {
+    grid-template-columns: 1fr;
+  }
+}

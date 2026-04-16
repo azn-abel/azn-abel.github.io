@@ -27,6 +27,7 @@ header {
       justify-content: center;
       list-style-type: none;
       padding: 0;
+      flex-wrap: wrap;
     }
     border: 1px solid black;
   }

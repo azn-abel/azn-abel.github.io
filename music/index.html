@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Abel Lu | Music I Like</title>
-    <link rel="stylesheet" href="../global.css" />
-    <link rel="stylesheet" href="./music.css" />
+    <link rel="stylesheet" href="/global.css" />
+    <link rel="stylesheet" href="/music/music.css" />
+    <link rel="stylesheet" href="/music/spotify-embed.css" />
   </head>
   <body>
     <header>
@@ -17,16 +18,27 @@
           <li><a href="/projects/">Projects</a></li>
           <li><a href="/writing/">Writing</a></li>
           <li><a href="/music/">Music I Like</a></li>
+          <li><a href="/gallery/">Gallery</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <p>Not exhaustive and no particular order</p>
+      <p>what i'm listening to rn:</p>
+      <div id="now-playing" class="np loading" aria-label="Spotify Now Playing">
+        <div class="skeleton skeleton--art"></div>
+        <div class="np__info">
+          <div class="skeleton skeleton--line w-sm"></div>
+          <div class="skeleton skeleton--line w-lg"></div>
+          <div class="skeleton skeleton--line w-md"></div>
+        </div>
+      </div>
       <p>
         <a href="https://www.last.fm/user/azn_abel">last.fm/user/azn_abel</a>
       </p>
       <div class="releases"></div>
       <script src="./music.js" defer></script>
+      <script src="./spotify.js" defer></script>
     </main>
     <footer>Abel Lu</footer>
   </body>

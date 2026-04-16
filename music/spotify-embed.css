@@ -1,0 +1,256 @@
+/* ══════════════════════════════════════
+   Spotify Now Playing — Styles
+   ══════════════════════════════════════ */
+
+:root {
+  --np-card: #18181b;
+  --np-border: #27272a;
+  --np-text: #fafafa;
+  --np-text-dim: #a1a1aa;
+  --np-green: #1db954;
+  --np-green-glow: rgba(29, 185, 84, 0.25);
+  --np-skeleton-base: #27272a;
+  --np-skeleton-shine: #2e2e32;
+}
+
+.np {
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+/* ── Card ── */
+
+.np {
+  width: 100%;
+  max-width: 380px;
+  background: var(--np-card);
+  border: 1px solid var(--np-border);
+  border-radius: 14px;
+  padding: 16px;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.3s;
+  font-family: "DM Mono", monospace;
+  color: var(--np-text);
+  box-sizing: border-box;
+}
+
+.np:hover {
+  border-color: var(--np-green);
+}
+
+/* Ambient glow */
+.np::before {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: -30px;
+  width: 120px;
+  height: 120px;
+  background: var(--np-green-glow);
+  border-radius: 50%;
+  filter: blur(40px);
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.np.playing::before {
+  opacity: 1;
+}
+
+/* ── Album art ── */
+
+.np__art {
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+  overflow: hidden;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.np__art img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.np__art-placeholder {
+  width: 100%;
+  height: 100%;
+  background: var(--np-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ── Text ── */
+
+.np__info {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.np__label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--np-text-dim);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.np__title {
+  font-family: "Syne", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.3;
+}
+
+.np__artist {
+  font-size: 12px;
+  color: var(--np-text-dim);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.np__idle {
+  font-size: 12px;
+  color: var(--np-text-dim);
+  line-height: 1.5;
+}
+
+/* ── Equalizer bars ── */
+
+.eq {
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+  height: 12px;
+}
+
+.eq span {
+  display: block;
+  width: 3px;
+  background: var(--np-green);
+  border-radius: 1px;
+  animation: eq 1s ease-in-out infinite alternate;
+}
+
+.eq span:nth-child(1) {
+  height: 4px;
+  animation-delay: 0s;
+}
+.eq span:nth-child(2) {
+  height: 8px;
+  animation-delay: 0.15s;
+}
+.eq span:nth-child(3) {
+  height: 5px;
+  animation-delay: 0.3s;
+}
+
+@keyframes eq {
+  0% {
+    height: 3px;
+  }
+  100% {
+    height: 12px;
+  }
+}
+
+.np:not(.playing) .eq span {
+  animation: none;
+  height: 3px;
+  background: var(--np-text-dim);
+}
+
+/* ── Spotify icon ── */
+
+.np__sp-link {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  display: flex;
+  line-height: 0;
+}
+
+.sp-icon {
+  opacity: 0.3;
+  transition: opacity 0.3s;
+}
+
+.np:hover .sp-icon {
+  opacity: 0.6;
+}
+
+/* ── Skeleton loading ── */
+
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--np-skeleton-base) 25%,
+    var(--np-skeleton-shine) 50%,
+    var(--np-skeleton-base) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 4px;
+}
+
+.skeleton--art {
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.skeleton--line {
+  height: 10px;
+  margin-bottom: 8px;
+}
+
+.skeleton--line.w-sm {
+  width: 35%;
+}
+.skeleton--line.w-md {
+  width: 60%;
+}
+.skeleton--line.w-lg {
+  width: 80%;
+}
+
+.np.loading .skeleton--line:last-child {
+  margin-bottom: 0;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* ── Small phones ── */
+
+@media (max-width: 480px) {
+  .np {
+    max-width: 100%;
+  }
+}
